@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <me.cinson.countdowntimer.RoundRectTextView
+        android:id="@+id/tv_day"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/tv_day_suffix"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/day_unit" />
+
+    <me.cinson.countdowntimer.RoundRectTextView
+        android:id="@+id/tv_hour"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/tv_hour_suffix"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text=":"
+        android:textStyle="bold" />
+
+    <me.cinson.countdowntimer.RoundRectTextView
+        android:id="@+id/tv_min"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/tv_min_suffix"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text=":"
+        android:textStyle="bold" />
+
+    <me.cinson.countdowntimer.RoundRectTextView
+        android:id="@+id/tv_sec"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center" />
+
+
+</LinearLayout>
