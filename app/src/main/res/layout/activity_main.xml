@@ -3,50 +3,84 @@
     xmlns:countdownTimer="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="16dp">
+    android:orientation="vertical">
 
-    <me.cinson.countdowntimer.CountdownTimerView
-        android:id="@+id/countdown_timer_1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="5dp"
-        android:layout_marginTop="5dp" />
-
-    <View
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="0.5dp"
-        android:background="@android:color/darker_gray" />
+        android:layout_height="wrap_content"
+        android:background="@android:color/darker_gray"
+        android:gravity="left|center_vertical"
+        android:paddingBottom="2dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="2dp"
+        android:text="@string/label_default"
+        android:textSize="10sp" />
 
     <me.cinson.countdowntimer.CountdownTimerView
-        android:id="@+id/countdown_timer_2"
+        android:id="@+id/countdown_timer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="5dp"
-        android:layout_marginTop="5dp"
+        android:layout_margin="10dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/darker_gray"
+        android:gravity="left|center_vertical"
+        android:paddingBottom="2dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="2dp"
+        android:text="@string/label_change_text_size_and_color"
+        android:textSize="10sp" />
+
+    <me.cinson.countdowntimer.CountdownTimerView
+        android:id="@+id/countdown_timer_a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
         countdownTimer:textColor="@android:color/holo_red_dark"
-        countdownTimer:textPadding="1dp"
-        countdownTimer:textSize="16sp" />
+        countdownTimer:textSize="18sp" />
 
-    <View
+
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="0.5dp"
-        android:background="@android:color/darker_gray" />
+        android:layout_height="wrap_content"
+        android:background="@android:color/darker_gray"
+        android:gravity="left|center_vertical"
+        android:paddingBottom="2dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="2dp"
+        android:text="@string/label_change_bg_color"
+        android:textSize="10sp" />
 
     <me.cinson.countdowntimer.CountdownTimerView
-        android:id="@+id/countdown_timer_3"
+        android:id="@+id/countdown_timer_b"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="5dp"
-        android:layout_marginTop="5dp"
+        android:layout_margin="10dp"
         countdownTimer:backgroundColor="@android:color/holo_blue_dark"
         countdownTimer:textColor="@android:color/white"
-        countdownTimer:textPadding="2dp"
-        countdownTimer:textSize="16sp" />
+        countdownTimer:textSize="18sp" />
 
-    <View
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="0.5dp"
-        android:background="@android:color/darker_gray" />
+        android:layout_height="wrap_content"
+        android:background="@android:color/darker_gray"
+        android:gravity="left|center_vertical"
+        android:paddingBottom="2dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="2dp"
+        android:text="@string/label_change_padding"
+        android:textSize="10sp" />
+
+    <me.cinson.countdowntimer.CountdownTimerView
+        android:id="@+id/countdown_timer_c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        countdownTimer:backgroundColor="@android:color/holo_blue_dark"
+        countdownTimer:textColor="@android:color/white"
+        countdownTimer:textPadding="5dp"
+        countdownTimer:textSize="18sp" />
 
 </LinearLayout>

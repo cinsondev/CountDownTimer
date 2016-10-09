@@ -8,47 +8,58 @@ import me.cinson.countdowntimer.CountdownTimerView;
 
 public class MainActivity extends AppCompatActivity {
 
-    private CountdownTimerView mTimerView1,mTimerView2,mTimerView3;
+    private CountdownTimerView mTimerView,mTimerViewA,mTimerViewB,mTimerViewC;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        mTimerView1 = (CountdownTimerView) findViewById(R.id.countdown_timer_1);
-        mTimerView2 = (CountdownTimerView) findViewById(R.id.countdown_timer_2);
-        mTimerView3 = (CountdownTimerView) findViewById(R.id.countdown_timer_3);
+        mTimerView = (CountdownTimerView) findViewById(R.id.countdown_timer);
+        mTimerViewA = (CountdownTimerView) findViewById(R.id.countdown_timer_a);
+        mTimerViewB = (CountdownTimerView) findViewById(R.id.countdown_timer_b);
+        mTimerViewC = (CountdownTimerView) findViewById(R.id.countdown_timer_c);
 
         init();
     }
 
     private void init() {
-        long[] times1 = {0, 0, 1, 30};
-        mTimerView1.setTimes(times1);
-        mTimerView1.setOnAlertListener(new CountdownTimerView.OnAlertListener() {
+        long[] times = {0, 0, 2, 0};
+        mTimerView.setTimes(times);
+        mTimerView.setOnAlertListener(new CountdownTimerView.OnAlertListener() {
             @Override
             public void onAlert() {
-                Toast.makeText(MainActivity.this, "On Timer 1 Alert", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "On Timer Alert", Toast.LENGTH_SHORT).show();
             }
         });
-        mTimerView1.run();
+        mTimerView.run();
 
-        long[] times2 = {1, 0, 1, 30};
-        mTimerView2.setTimes(times2);
-        mTimerView2.setOnAlertListener(new CountdownTimerView.OnAlertListener() {
+        long[] timesA = {1, 0, 1, 30};
+        mTimerViewA.setTimes(timesA);
+        mTimerViewA.setOnAlertListener(new CountdownTimerView.OnAlertListener() {
             @Override
             public void onAlert() {
-                Toast.makeText(MainActivity.this, "On Timer 2 Alert", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "On Timer A Alert", Toast.LENGTH_SHORT).show();
             }
         });
-        mTimerView2.run();
+        mTimerViewA.run();
 
-        long[] times3 = {0, 8, 8, 8};
-        mTimerView3.setTimes(times3);
-        mTimerView3.setOnAlertListener(new CountdownTimerView.OnAlertListener() {
+        long[] timesB = {0, 8, 8, 8};
+        mTimerViewB.setTimes(timesB);
+        mTimerViewB.setOnAlertListener(new CountdownTimerView.OnAlertListener() {
             @Override
             public void onAlert() {
-                Toast.makeText(MainActivity.this, "On Timer 3 Alert", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "On Timer B Alert", Toast.LENGTH_SHORT).show();
             }
         });
-        mTimerView3.run();
+        mTimerViewB.run();
+
+        long[] timesC = {0, 8, 8, 8};
+        mTimerViewC.setTimes(timesC);
+        mTimerViewC.setOnAlertListener(new CountdownTimerView.OnAlertListener() {
+            @Override
+            public void onAlert() {
+                Toast.makeText(MainActivity.this, "On Timer B Alert", Toast.LENGTH_SHORT).show();
+            }
+        });
+        mTimerViewC.run();
     }
 }
