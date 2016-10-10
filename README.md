@@ -1,7 +1,7 @@
 # CountDownTimer
 A simple countdown timer view
 
-To be added
+<img src="https://raw.githubusercontent.com/cinsondev/CountDownTimer/master/screenshot/screenshot_01.png" width="50%" />
 
 ## Usage
 
